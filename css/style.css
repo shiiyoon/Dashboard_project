@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --ff: #f3f3f3;
+}
+.header{
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+.menu-btn{
+
+}
+.menu-show{
+  
+}
+.left{
+     box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075) inset;
+}
+.right{
+    background-color: var(--ff);
+    overflow: scroll;
+}
+.user{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.statusCard{
+    transition: 0.3s;
+}
+.statusCard:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+}
+.statusCard:active{
+    transform: scale(0.9);
+}
+.ov-img{
+    margin-left: -25px;
+}
+.item-carousel{
+    margin-top: -100px;
+}
+.card-img{
+    height: 180px;
+    width: 151px;
+   
+}
+.sub-list tr{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sub-list tr:active{
+    transform: scale(1.03);
+}
+@media screen and (max-width: 780px) {
+    .left{
+        display: block !important;
+        background-color: white;
+        width: 300px;
+        position: fixed;
+        z-index: 2001;
+        margin-left: -100%;
+    }
+    .item-carousel-card{
+        margin-top: 100px;
+    }
+}
+
